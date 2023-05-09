@@ -1,0 +1,8 @@
+<div class="todo__header">
+    <h2 class="todo__header-title">Todo list</h2>
+    <div class="todo__header-input-field">
+        <input type="text" class="todo__header-input" placeholder="new case" [(ngModel)]="title"
+            (keydown.enter)="addCase()" />
+        <button class="todo__header-add" (click)="addCase()">Add</button>
+    </div>
+</div>

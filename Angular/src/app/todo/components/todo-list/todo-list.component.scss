@@ -1,0 +1,24 @@
+@import "src/styles/variables";
+
+.todo__list {
+  padding: 0 40px;
+}
+
+.todo__clear-items {
+  display: block;
+  margin: 30px auto 0 auto;
+  height: 40px;
+  width: 200px;
+  border: 1px solid $removeColor;
+  border-radius: 10px;
+  font-size: 18px;
+  color: $removeColor;
+  background-color: $todoBg;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 10px;
+    background-color: $removeColor;
+    color: $todoBg;
+  }
+}

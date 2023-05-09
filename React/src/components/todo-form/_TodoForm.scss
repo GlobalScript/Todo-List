@@ -1,0 +1,43 @@
+.todo__header-title {
+    text-align: center;
+    margin: 10px 0 40px 0;
+    font-size: 36px;
+  }
+  
+  .todo__header-input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .todo__header-input {
+    width: 55%;
+    height: 50px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid $inputBorder;
+  }
+  
+  ::placeholder {
+    color: $placeholderColor;
+  }
+  
+  .todo__header-add {
+    width: 25%;
+    height: 50px;
+    border: none;
+    background: $inputBorder;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    color: $placeholderColor;
+  
+    &:hover {
+      color: $todoBg;
+    }
+  }

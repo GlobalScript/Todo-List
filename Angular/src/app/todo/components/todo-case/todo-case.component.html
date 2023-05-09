@@ -1,0 +1,14 @@
+<li>
+  <div class="todo__list-case">
+    <input type="checkbox" [checked]="todo.completed" />
+    <label *ngIf="editToggle" (click)="todoService.toggleCompleted(todo.id)"></label>
+    <p><span *ngIf="editToggle">{{todo.title}}</span>
+      <input type="text" [(ngModel)]="editText" class="todo__list-edit-input" (blur)="editCase()"
+        (keydown.enter)="editCase()" *ngIf="!editToggle" />
+    </p>
+  </div>
+  <div class="todo__list-buttons">
+    <button class="todo__list-edit" (click)="openEdit()">&#9998;</button>
+    <button class="todo__list-remove" (click)="todoService.removeTodo(todo.id)">X</button>
+  </div>
+</li>

@@ -1,0 +1,5 @@
+<ul class="todo__list">
+    <app-todo-case *ngFor="let todo of todoService.getList()" [todo]="todo"></app-todo-case>
+</ul>
+<button class="todo__clear-items" (click)="todoService.clearList()">
+    Clear items</button>
